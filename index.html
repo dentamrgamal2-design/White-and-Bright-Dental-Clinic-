@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#087f8c">
+  <meta name="description" content="White and Bright Dental Clinic — Dr. Amr Gamal. احجز موعدك بسهولة عبر واتساب.">
+  <title>White and Bright Dental Clinic | Dr. Amr Gamal</title>
+  <style>
+    :root{--teal:#087f8c;--deep:#07545c;--mint:#e7f7f6;--ink:#183438;--muted:#61777a;--white:#fff;--line:#dcebea}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.7}
+    a{color:inherit;text-decoration:none} button,input,select,textarea{font:inherit}
+    .topbar{background:var(--deep);color:white;text-align:center;padding:7px 12px;font-size:13px}
+    header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;line-height:1.25}
+    .logo{width:44px;height:44px;border-radius:14px;background:var(--teal);color:white;display:grid;place-items:center;font-size:23px}
+    .brand small{display:block;font-size:11px;color:var(--muted);font-weight:500;margin-top:4px}
+    nav{display:flex;align-items:center;gap:22px;font-size:14px}
+    .lang,.btn{border:0;border-radius:12px;padding:10px 16px;cursor:pointer;font-weight:700}
+    .lang{background:var(--mint);color:var(--deep)}
+    .btn{background:var(--teal);color:white;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}
+    .btn:hover{background:var(--deep);transform:translateY(-1px)}
+    .btn.outline{background:white;color:var(--teal);border:1px solid var(--teal)}
+    .hero{background:radial-gradient(circle at 15% 15%,#d8f3f0 0,transparent 34%),linear-gradient(135deg,#f4fbfa,#fff 65%);overflow:hidden}
+    .hero-inner{max-width:1120px;margin:auto;padding:76px 22px 72px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:45px}
+    .eyebrow{display:inline-block;background:#dff4f1;color:var(--deep);padding:6px 13px;border-radius:30px;font-size:13px;font-weight:700}
+    h1{font-size:clamp(34px,5vw,56px);line-height:1.2;margin:18px 0 15px;letter-spacing:-1px}
+    h1 span{color:var(--teal)} .lead{font-size:17px;color:var(--muted);max-width:570px;margin:0 0 26px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .visual{min-height:340px;border-radius:35px;background:linear-gradient(145deg,#c9eeeb,#f2fbfa);display:grid;place-items:center;position:relative;padding:25px}
+    .tooth{font-size:145px;filter:drop-shadow(0 16px 18px #087f8c20)}
+    .bubble{position:absolute;background:white;padding:12px 17px;border-radius:16px;box-shadow:0 12px 35px #15464b12;font-weight:700;font-size:13px}
+    .bubble.one{top:25px;right:20px}.bubble.two{bottom:28px;left:18px}
+    section{padding:70px 22px}.container{max-width:1120px;margin:auto}
+    .section-head{text-align:center;max-width:680px;margin:0 auto 35px}
+    .section-head h2{font-size:32px;margin:0 0 9px}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .service{border:1px solid var(--line);border-radius:19px;padding:23px;background:white;transition:.2s}
+    .service:hover{transform:translateY(-4px);box-shadow:0 14px 30px #174b5010}
+    .service-icon{width:48px;height:48px;border-radius:15px;background:var(--mint);display:grid;place-items:center;font-size:24px;margin-bottom:13px}
+    .service h3{margin:0 0 5px;font-size:18px}.service p{margin:0;color:var(--muted);font-size:14px}
+    .about{background:#f5fbfa}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+    .about-card{background:white;border:1px solid var(--line);padding:28px;border-radius:25px}
+    .about-card .big-icon{font-size:54px}
+    .about h2{font-size:32px;line-height:1.3;margin:0 0 14px}.about p{color:var(--muted)}
+    .check{margin:10px 0;font-weight:600}.check:before{content:"✓";color:var(--teal);font-weight:900;margin-left:10px}
+    .booking{background:linear-gradient(135deg,#f5fbfa,#e7f7f6)}
+    .booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:start}
+    .booking-info{background:var(--deep);color:white;border-radius:24px;padding:28px}
+    .booking-info p{color:#d3eeec}.booking-info .contact-line{margin-top:20px;font-weight:700}
+    form{background:white;border:1px solid var(--line);padding:28px;border-radius:24px;box-shadow:0 15px 40px #12484b08}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+    input,select,textarea{width:100%;padding:12px;border:1px solid #cbdedd;border-radius:11px;background:#fff;color:var(--ink);outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px #087f8c18}
+    .field.full{grid-column:1/-1}textarea{resize:vertical;min-height:88px}
+    .form-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+    .form-submit{width:100%;margin-top:17px;padding:14px}
+    .contact{text-align:center}.contact .btn{margin-top:10px}
+    footer{background:#073f46;color:#e6f5f3;padding:25px 22px;text-align:center;font-size:13px}
+    .wa-float{position:fixed;bottom:20px;left:20px;z-index:20;width:56px;height:56px;border-radius:50%;background:#20b968;color:#fff;display:grid;place-items:center;font-size:25px;box-shadow:0 8px 25px #073f4640}
+    [dir="ltr"] body{text-align:left}
+    [dir="ltr"] .check:before{margin-left:0;margin-right:10px}
+    [dir="ltr"] .bubble.one{right:auto;left:20px}[dir="ltr"] .bubble.two{left:auto;right:18px}
+    @media(max-width:800px){nav{gap:10px}nav a{display:none}.hero-inner,.about-grid,.booking-grid{grid-template-columns:1fr}.hero-inner{padding-top:48px}.visual{min-height:260px}.tooth{font-size:115px}.services{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.nav{padding:11px 14px}.brand{font-size:13px}.logo{width:39px;height:39px}.hero-inner{padding:42px 18px}.lead{font-size:15px}section{padding:52px 17px}.section-head h2,.about h2{font-size:27px}.services,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}form{padding:19px}.booking-info{padding:22px}.visual{min-height:220px}}
+  </style>
+</head>
+<body>
+  <div class="topbar" data-ar="ابتسامتك تستحق عناية مميزة — احجز موعدك بسهولة" data-en="Your smile deserves exceptional care — book your visit today">ابتسامتك تستحق عناية مميزة — احجز موعدك بسهولة</div>
+  <header>
+    <div class="nav">
+      <a href="#home" class="brand"><span class="logo">✦</span><span>White and Bright<small>Dental Clinic · Dr. Amr Gamal</small></span></a>
+      <nav>
+        <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+        <a href="#about" data-ar="عن العيادة" data-en="About">عن العيادة</a>
+        <a href="#booking" data-ar="احجز موعدك" data-en="Book Now">احجز موعدك</a>
+      </nav>
+      <button class="lang" id="langToggle" type="button">English</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow" data-ar="رعاية أسنان باهتمام وراحة" data-en="Thoughtful dental care, with your comfort in mind">رعاية أسنان باهتمام وراحة</span>
+          <h1 data-ar="ابتسامتك أجمل مع <span>White and Bright</span>" data-en="A brighter smile starts at <span>White and Bright</span>">ابتسامتك أجمل مع <span>White and Bright</span></h1>
+          <p class="lead" data-ar="مع د. عمرو جمال، نهتم بصحة أسنانك وراحتك من أول زيارة. اختار الخدمة المناسبة واطلب موعدك بسهولة عبر واتساب." data-en="At Dr. Amr Gamal’s clinic, your oral health and comfort come first. Choose a service and request your appointment easily through WhatsApp.">مع د. عمرو جمال، نهتم بصحة أسنانك وراحتك من أول زيارة. اختار الخدمة المناسبة واطلب موعدك بسهولة عبر واتساب.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#booking" data-ar="📅 احجز موعدك الآن" data-en="📅 Book an Appointment">📅 احجز موعدك الآن</a>
+            <a class="btn outline" href="#services" data-ar="اكتشف خدماتنا" data-en="Explore Services">اكتشف خدماتنا</a>
+          </div>
+        </div>
+        <div class="visual" aria-label="Dental care illustration">
+          <div class="bubble one" data-ar="رعاية تبدأ بابتسامة" data-en="Care that starts with a smile">رعاية تبدأ بابتسامة</div>
+          <div class="tooth">🦷</div>
+          <div class="bubble two" data-ar="Dr. Amr Gamal" data-en="Dr. Amr Gamal">Dr. Amr Gamal</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head"><h2 data-ar="خدماتنا" data-en="Our Services">خدماتنا</h2><p data-ar="خدمات متنوعة للحفاظ على صحة أسنانك وابتسامتك." data-en="A range of services to help care for your teeth and smile.">خدمات متنوعة للحفاظ على صحة أسنانك وابتسامتك.</p></div>
+        <div class="services">
+          <article class="service"><div class="service-icon">🩺</div><h3 data-ar="الكشف والاستشارة" data-en="Dental Check-up">الكشف والاستشارة</h3><p data-ar="تقييم صحة الفم والأسنان وتحديد خطة العلاج المناسبة." data-en="Oral health assessment and a suitable treatment plan.">تقييم صحة الفم والأسنان وتحديد خطة العلاج المناسبة.</p></article>
+          <article class="service"><div class="service-icon">✨</div><h3 data-ar="تنظيف الجير والتصبغات" data-en="Scaling & Polishing">تنظيف الجير والتصبغات</h3><p data-ar="للمساعدة في الحفاظ على نظافة الأسنان وصحة اللثة." data-en="Professional cleaning to support healthy teeth and gums.">للمساعدة في الحفاظ على نظافة الأسنان وصحة اللثة.</p></article>
+          <article class="service"><div class="service-icon">🦷</div><h3 data-ar="حشو العصب" data-en="Root Canal Treatment">حشو العصب</h3><p data-ar="علاج الأسنان المتضررة من الداخل وفقًا لحالتها." data-en="Treatment for teeth affected by deep decay or damage.">علاج الأسنان المتضررة من الداخل وفقًا لحالتها.</p></article>
+          <article class="service"><div class="service-icon">🪥</div><h3 data-ar="حشو الأسنان" data-en="Dental Fillings">حشو الأسنان</h3><p data-ar="ترميم الأسنان المتضررة للمساعدة في استعادة وظيفتها." data-en="Restore damaged teeth and help regain their function.">ترميم الأسنان المتضررة للمساعدة في استعادة وظيفتها.</p></article>
+          <article class="service"><div class="service-icon">😁</div><h3 data-ar="تبييض الأسنان" data-en="Teeth Whitening">تبييض الأسنان</h3><p data-ar="خيارات لتحسين لون الأسنان بعد تقييم الحالة." data-en="Options to improve tooth shade after an assessment.">خيارات لتحسين لون الأسنان بعد تقييم الحالة.</p></article>
+          <article class="service"><div class="service-icon">💎</div><h3 data-ar="تركيبات الأسنان" data-en="Crowns & Bridges">تركيبات الأسنان</h3><p data-ar="حلول تعويضية لتحسين وظيفة الأسنان ومظهرها." data-en="Restorative options to improve dental function and appearance.">حلول تعويضية لتحسين وظيفة الأسنان ومظهرها.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div><span class="eyebrow" data-ar="عن العيادة" data-en="About the Clinic">عن العيادة</span><h2 data-ar="اهتمام بالتفاصيل، وراحة في كل زيارة" data-en="Care in every detail, comfort at every visit">اهتمام بالتفاصيل، وراحة في كل زيارة</h2><p data-ar="في White and Bright Dental Clinic، هدفنا مساعدتك على الحفاظ على صحة فمك وأسنانك من خلال رعاية مهنية وخطة علاج تناسب احتياجاتك." data-en="At White and Bright Dental Clinic, our goal is to help you maintain your oral health with professional care and a treatment plan tailored to your needs.">في White and Bright Dental Clinic، هدفنا مساعدتك على الحفاظ على صحة فمك وأسنانك من خلال رعاية مهنية وخطة علاج تناسب احتياجاتك.</p><div class="check" data-ar="شرح واضح لخيارات العلاج" data-en="Clear explanations of treatment options">شرح واضح لخيارات العلاج</div><div class="check" data-ar="اهتمام براحة المريض" data-en="Patient comfort comes first">اهتمام براحة المريض</div><div class="check" data-ar="حجز سهل عبر واتساب" data-en="Easy appointment requests through WhatsApp">حجز سهل عبر واتساب</div></div>
+        <div class="about-card"><div class="big-icon">👨‍⚕️</div><h3>Dr. Amr Gamal</h3><p data-ar="يسعدنا استقبال رسالتك والإجابة عن استفساراتك ومساعدتك في طلب موعد مناسب." data-en="We’re happy to hear from you, answer your questions, and help you request a convenient appointment.">يسعدنا استقبال رسالتك والإجابة عن استفساراتك ومساعدتك في طلب موعد مناسب.</p><a href="#booking" class="btn" data-ar="اطلب موعدًا" data-en="Request an Appointment">اطلب موعدًا</a></div>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="container">
+        <div class="section-head"><h2 data-ar="احجز موعدك" data-en="Book an Appointment">احجز موعدك</h2><p data-ar="املأ البيانات التالية، وسنجهز لك رسالة واتساب بطلب الحجز." data-en="Fill in the details below and we’ll prepare your appointment request in WhatsApp.">املأ البيانات التالية، وسنجهز لك رسالة واتساب بطلب الحجز.</p></div>
+        <div class="booking-grid">
+          <div class="booking-info"><h3 data-ar="خطوة بسيطة لابتسامة أكثر صحة" data-en="One simple step toward a healthier smile">خطوة بسيطة لابتسامة أكثر صحة</h3><p data-ar="إرسال الطلب لا يعني تأكيد الموعد تلقائيًا. ستتواصل معك العيادة لتأكيد اليوم والوقت المناسبين." data-en="Submitting a request does not automatically confirm your appointment. The clinic will contact you to confirm the date and time.">إرسال الطلب لا يعني تأكيد الموعد تلقائيًا. ستتواصل معك العيادة لتأكيد اليوم والوقت المناسبين.</p><div class="contact-line">WhatsApp: +20 106 235 3867</div><div class="contact-line" data-ar="White and Bright Dental Clinic" data-en="White and Bright Dental Clinic">White and Bright Dental Clinic</div></div>
+          <form id="bookingForm">
+            <div class="form-grid">
+              <div class="field"><label for="name" data-ar="الاسم بالكامل *" data-en="Full Name *">الاسم بالكامل *</label><input id="name" name="name" required autocomplete="name" placeholder="الاسم / Name"></div>
+              <div class="field"><label for="phone" data-ar="رقم الموبايل *" data-en="Mobile Number *">رقم الموبايل *</label><input id="phone" name="phone" required type="tel" autocomplete="tel" placeholder="01xxxxxxxxx"></div>
+              <div class="field"><label for="service" data-ar="الخدمة المطلوبة *" data-en="Service Required *">الخدمة المطلوبة *</label><select id="service" name="service" required><option value="" data-ar="اختار الخدمة" data-en="Choose a service">اختار الخدمة</option><option data-ar="كشف واستشارة" data-en="Dental Check-up">كشف واستشارة</option><option data-ar="تنظيف الجير والتصبغات" data-en="Scaling & Polishing">تنظيف الجير والتصبغات</option><option data-ar="حشو العصب" data-en="Root Canal Treatment">حشو العصب</option><option data-ar="حشو الأسنان" data-en="Dental Fillings">حشو الأسنان</option><option data-ar="تبييض الأسنان" data-en="Teeth Whitening">تبييض الأسنان</option><option data-ar="تركيبات الأسنان" data-en="Crowns & Bridges">تركيبات الأسنان</option><option data-ar="خلع الأسنان" data-en="Tooth Extraction">خلع الأسنان</option><option data-ar="خدمة أخرى" data-en="Other">خدمة أخرى</option></select></div>
+              <div class="field"><label for="date" data-ar="اليوم المناسب *" data-en="Preferred Date *">اليوم المناسب *</label><input id="date" name="date" type="date" required></div>
+              <div class="field"><label for="time" data-ar="الوقت المناسب" data-en="Preferred Time">الوقت المناسب</label><select id="time" name="time"><option value="" data-ar="أي وقت مناسب" data-en="Any convenient time">أي وقت مناسب</option><option data-ar="صباحًا" data-en="Morning">صباحًا</option><option data-ar="ظهرًا" data-en="Afternoon">ظهرًا</option><option data-ar="مساءً" data-en="Evening">مساءً</option></select></div>
+              <div class="field full"><label for="notes" data-ar="ملاحظات (اختياري)" data-en="Notes (optional)">ملاحظات (اختياري)</label><textarea id="notes" name="notes" placeholder="اكتب أي ملاحظات إضافية..."></textarea></div>
+            </div>
+            <button type="submit" class="btn form-submit" data-ar="إرسال طلب الحجز عبر واتساب" data-en="Send Booking Request via WhatsApp">إرسال طلب الحجز عبر واتساب</button>
+            <p class="form-note" data-ar="سيتم فتح واتساب برسالة جاهزة. راجع الرسالة واضغط إرسال لإيصال طلبك للعيادة." data-en="WhatsApp will open with a prepared message. Review it and press Send to deliver your request to the clinic.">سيتم فتح واتساب برسالة جاهزة. راجع الرسالة واضغط إرسال لإيصال طلبك للعيادة.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact"><div class="container"><div class="section-head"><h2 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2><p data-ar="للاستفسارات أو طلب موعد، راسلنا مباشرة على واتساب." data-en="For questions or appointment requests, message us directly on WhatsApp.">للاستفسارات أو طلب موعد، راسلنا مباشرة على واتساب.</p></div><a class="btn" href="https://wa.me/201062353867" target="_blank" rel="noopener" data-ar="💬 تواصل عبر واتساب" data-en="💬 Chat on WhatsApp">💬 تواصل عبر واتساب</a></div></section>
+  </main>
+  <footer>© <span id="year"></span> White and Bright Dental Clinic · Dr. Amr Gamal</footer>
+  <a class="wa-float" href="https://wa.me/201062353867" target="_blank" rel="noopener" aria-label="WhatsApp">☏</a>
+
+  <script>
+    const form = document.getElementById('bookingForm');
+    const langButton = document.getElementById('langToggle');
+    let currentLang = 'ar';
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const dateInput = document.getElementById('date');
+    const today = new Date();
+    const localToday = new Date(today.getTime() - today.getTimezoneOffset()*60000).toISOString().split('T')[0];
+    dateInput.min = localToday;
+
+    function setLanguage(lang){
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.querySelectorAll('[data-ar][data-en]').forEach(el=>{
+        const value = el.dataset[lang];
+        if (el.tagName === 'OPTION') el.textContent = value;
+        else el.innerHTML = value;
+      });
+      langButton.textContent = lang === 'ar' ? 'English' : 'العربية';
+      document.getElementById('name').placeholder = lang === 'ar' ? 'الاسم / Name' : 'Full name';
+      document.getElementById('phone').placeholder = lang === 'ar' ? '01xxxxxxxxx' : '01xxxxxxxxx';
+      document.getElementById('notes').placeholder = lang === 'ar' ? 'اكتب أي ملاحظات إضافية...' : 'Add any extra notes...';
+    }
+    langButton.addEventListener('click',()=>setLanguage(currentLang === 'ar' ? 'en' : 'ar'));
+
+    form.addEventListener('submit', e=>{
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const serviceEl = document.getElementById('service');
+      const service = serviceEl.options[serviceEl.selectedIndex].dataset[currentLang] || serviceEl.value;
+      const date = document.getElementById('date').value;
+      const timeEl = document.getElementById('time');
+      const time = timeEl.value ? (timeEl.options[timeEl.selectedIndex].dataset[currentLang] || timeEl.value) : (currentLang === 'ar' ? 'أي وقت مناسب' : 'Any convenient time');
+      const notes = document.getElementById('notes').value.trim();
+      const msg = currentLang === 'ar'
+        ? `طلب حجز موعد جديد - White and Bright Dental Clinic\nالطبيب: Dr. Amr Gamal\nالاسم: ${name}\nرقم الموبايل: ${phone}\nالخدمة: ${service}\nالتاريخ المفضل: ${date}\nالوقت المفضل: ${time}\nملاحظات: ${notes || 'لا توجد'}\n\nبرجاء تأكيد الموعد المتاح.`
+        : `New Appointment Request - White and Bright Dental Clinic\nDoctor: Dr. Amr Gamal\nName: ${name}\nMobile: ${phone}\nService: ${service}\nPreferred date: ${date}\nPreferred time: ${time}\nNotes: ${notes || 'None'}\n\nPlease confirm the available appointment.`;
+      window.open(`https://wa.me/201062353867?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
