@@ -66,6 +66,24 @@
     [dir="ltr"] .bubble.one{right:auto;left:20px}[dir="ltr"] .bubble.two{left:auto;right:18px}
     @media(max-width:800px){nav{gap:10px}nav a{display:none}.hero-inner,.about-grid,.booking-grid{grid-template-columns:1fr}.hero-inner{padding-top:48px}.visual{min-height:260px}.tooth{font-size:115px}.services{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:520px){.nav{padding:11px 14px}.brand{font-size:13px}.logo{width:39px;height:39px}.hero-inner{padding:42px 18px}.lead{font-size:15px}section{padding:52px 17px}.section-head h2,.about h2{font-size:27px}.services,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}form{padding:19px}.booking-info{padding:22px}.visual{min-height:220px}}
+
+    /* Premium visual refresh */
+    :root{--gold:#c5a66a;--deep:#064c55}
+    .hero{background:radial-gradient(circle at 15% 15%,#d7f0ed 0,transparent 36%),linear-gradient(125deg,#f8fcfb,#fff 62%)}
+    .doctor-photo-wrap{position:relative;display:flex;justify-content:center;align-items:center;padding:10px}
+    .doctor-photo-wrap:before{content:"";position:absolute;inset:3px 1px 1px 16px;border:1px solid var(--gold);border-radius:34px;transform:rotate(3deg)}
+    .doctor-photo{position:relative;width:min(100%,410px);height:460px;object-fit:cover;object-position:center 24%;border:7px solid white;border-radius:30px;box-shadow:0 24px 60px #073f4626}
+    .price-section{background:#f5fbfa}
+    .price-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:960px;margin:auto}
+    .price-item{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:17px 19px;border:1px solid var(--line);border-radius:17px;background:#fff;box-shadow:0 7px 22px #15464b08}
+    .price-item h3{font-size:15px;margin:0 0 4px}.price-item p{font-size:12px;color:var(--muted);margin:0}
+    .price-value{white-space:nowrap;font-weight:800;color:var(--teal);font-size:15px;text-align:left}
+    .price-note{text-align:center;color:var(--muted);font-size:12px;margin:20px auto 0;max-width:760px}
+    .location-card{max-width:760px;margin:auto;padding:30px;border:1px solid var(--line);border-radius:24px;text-align:center;background:linear-gradient(135deg,#fff,#f5fbfa)}
+    .gold-line{width:68px;height:3px;background:var(--gold);border-radius:5px;margin:13px auto 0}
+    @media(max-width:800px){.doctor-photo{height:390px;width:min(100%,360px)}}
+    @media(max-width:600px){.price-grid{grid-template-columns:1fr}.price-item{padding:15px}.doctor-photo{height:350px;width:min(100%,330px)}.location-card{padding:22px}}
+
   </style>
 </head>
 <body>
@@ -76,7 +94,9 @@
       <nav>
         <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
         <a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+        <a href="#prices" data-ar="الأسعار" data-en="Prices">الأسعار</a>
         <a href="#about" data-ar="عن العيادة" data-en="About">عن العيادة</a>
+        <a href="#location" data-ar="موقعنا" data-en="Location">موقعنا</a>
         <a href="#booking" data-ar="احجز موعدك" data-en="Book Now">احجز موعدك</a>
       </nav>
       <button class="lang" id="langToggle" type="button">English</button>
@@ -95,11 +115,7 @@
             <a class="btn outline" href="#services" data-ar="اكتشف خدماتنا" data-en="Explore Services">اكتشف خدماتنا</a>
           </div>
         </div>
-        <div class="visual" aria-label="Dental care illustration">
-          <div class="bubble one" data-ar="رعاية تبدأ بابتسامة" data-en="Care that starts with a smile">رعاية تبدأ بابتسامة</div>
-          <div class="tooth">🦷</div>
-          <div class="bubble two" data-ar="Dr. Amr Gamal" data-en="Dr. Amr Gamal">Dr. Amr Gamal</div>
-        </div>
+        <div class="doctor-photo-wrap"><img class="doctor-photo" src="dr-amr-gamal.jpg" alt="Dr. Amr Gamal - White and Bright Dental Clinic"><div class="bubble two" data-ar="د. عمرو جمال" data-en="Dr. Amr Gamal">د. عمرو جمال</div></div>
       </div>
     </section>
 
@@ -116,6 +132,9 @@
         </div>
       </div>
     </section>
+
+
+    <section class="price-section" id="prices"><div class="container"><div class="section-head"><h2 data-ar="خدماتنا وأسعارنا" data-en="Our Services & Prices">خدماتنا وأسعارنا</h2><p data-ar="أسعار واضحة لخدمات مختارة في العيادة." data-en="Transparent prices for selected clinic services.">أسعار واضحة لخدمات مختارة في العيادة.</p><div class="gold-line"></div></div><div class="price-grid"><article class="price-item"><div><h3 data-ar="إزالة الجير وتلميع الأسنان" data-en="Scaling & Teeth Polishing">إزالة الجير وتلميع الأسنان</h3><p>Scaling & Teeth Polishing</p></div><div class="price-value" data-ar="700 جنيه" data-en="EGP 700">700 جنيه<br><small>EGP 700</small></div></article><article class="price-item"><div><h3 data-ar="حشو الليزر كومبوزيت" data-en="Composite Filling">حشو الليزر كومبوزيت</h3><p>Composite Filling</p></div><div class="price-value" data-ar="1,500 جنيه" data-en="EGP 1,500">1,500 جنيه<br><small>EGP 1,500</small></div></article><article class="price-item"><div><h3 data-ar="علاج الجذور وحشو العصب" data-en="Root Canal Treatment">علاج الجذور وحشو العصب</h3><p>Root Canal Treatment</p></div><div class="price-value" data-ar="2,000 جنيه" data-en="EGP 2,000">2,000 جنيه<br><small>EGP 2,000</small></div></article><article class="price-item"><div><h3 data-ar="تركيبات الزيركونيا" data-en="Zirconia Crowns">تركيبات الزيركونيا</h3><p>Zirconia Crowns</p></div><div class="price-value" data-ar="3,500 جنيه" data-en="EGP 3,500">3,500 جنيه<br><small>EGP 3,500</small></div></article><article class="price-item"><div><h3 data-ar="تركيبات الإيماكس" data-en="E.max Crowns">تركيبات الإيماكس</h3><p>E.max Crowns</p></div><div class="price-value" data-ar="4,500 جنيه" data-en="EGP 4,500">4,500 جنيه<br><small>EGP 4,500</small></div></article><article class="price-item"><div><h3 data-ar="حشو ضوئي للأطفال" data-en="Children’s Composite Filling">حشو ضوئي للأطفال</h3><p>Children’s Composite Filling</p></div><div class="price-value" data-ar="1,000 جنيه" data-en="EGP 1,000">1,000 جنيه<br><small>EGP 1,000</small></div></article><article class="price-item"><div><h3 data-ar="حشو عصب للأطفال" data-en="Pulp Treatment for Children">حشو عصب للأطفال</h3><p>Pulp Treatment for Children</p></div><div class="price-value" data-ar="1,000 جنيه" data-en="EGP 1,000">1,000 جنيه<br><small>EGP 1,000</small></div></article><article class="price-item"><div><h3 data-ar="طربوش استانلس للأطفال" data-en="Stainless Steel Crown for Children">طربوش استانلس للأطفال</h3><p>Stainless Steel Crown for Children</p></div><div class="price-value" data-ar="1,000 جنيه" data-en="EGP 1,000">1,000 جنيه<br><small>EGP 1,000</small></div></article><article class="price-item"><div><h3 data-ar="تقويم الأسنان" data-en="Orthodontic Treatment">تقويم الأسنان</h3><p>Orthodontic Treatment</p></div><div class="price-value" data-ar="حسب الحالة وخطة العلاج" data-en="Based on case & treatment plan">حسب الحالة وخطة العلاج<br><small>Based on case & treatment plan</small></div></article><article class="price-item"><div><h3 data-ar="زراعة الأسنان" data-en="Dental Implants">زراعة الأسنان</h3><p>Dental Implants</p></div><div class="price-value" data-ar="حسب الحالة وخطة العلاج" data-en="Based on case & treatment plan">حسب الحالة وخطة العلاج<br><small>Based on case & treatment plan</small></div></article></div><p class="price-note" data-ar="الأسعار بالجنيه المصري. قد تختلف التكلفة النهائية حسب الفحص واحتياجات الحالة؛ يرجى تأكيد السعر مع العيادة قبل بدء العلاج." data-en="Prices are in Egyptian pounds. Final costs may vary depending on examination and individual needs; please confirm with the clinic before treatment.">الأسعار بالجنيه المصري. قد تختلف التكلفة النهائية حسب الفحص واحتياجات الحالة؛ يرجى تأكيد السعر مع العيادة قبل بدء العلاج.</p></div></section>
 
     <section class="about" id="about">
       <div class="container about-grid">
@@ -144,6 +163,9 @@
         </div>
       </div>
     </section>
+
+
+    <section id="location"><div class="container"><div class="location-card"><div class="section-head"><h2 data-ar="موقع العيادة" data-en="Clinic Location">موقع العيادة</h2><p data-ar="يسعدنا زيارتكم في White and Bright Dental Clinic — Dr. Amr Gamal" data-en="We look forward to welcoming you at White and Bright Dental Clinic — Dr. Amr Gamal">يسعدنا زيارتكم في White and Bright Dental Clinic — Dr. Amr Gamal</p><div class="gold-line"></div></div><a class="btn" href="https://maps.app.goo.gl/YL6MRt4q1MBZm7147" target="_blank" rel="noopener" data-ar="📍 اعرف طريقك للعيادة" data-en="📍 Get Directions">📍 اعرف طريقك للعيادة</a></div></div></section>
 
     <section class="contact" id="contact"><div class="container"><div class="section-head"><h2 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2><p data-ar="للاستفسارات أو طلب موعد، راسلنا مباشرة على واتساب." data-en="For questions or appointment requests, message us directly on WhatsApp.">للاستفسارات أو طلب موعد، راسلنا مباشرة على واتساب.</p></div><a class="btn" href="https://wa.me/201062353867" target="_blank" rel="noopener" data-ar="💬 تواصل عبر واتساب" data-en="💬 Chat on WhatsApp">💬 تواصل عبر واتساب</a></div></section>
   </main>
